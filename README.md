@@ -13,6 +13,7 @@ chmod +x ZED_SDK_Tegra_L4T32.3_v3.7.4.run
 
 
 # startle
+## ZED
  cd ~/catkin_ws/src
  git clone --recursive https://github.com/stereolabs/zed-ros-wrapper.git
  cd ../
@@ -26,3 +27,7 @@ chmod +x ZED_SDK_Tegra_L4T32.3_v3.7.4.run
  rosdep install --from-paths src --ignore-src -r -y
  catkin_make -DCMAKE_BUILD_TYPE=Release
  source ./devel/setup.bash
+## Ardupilot
+https://ardupilot.org/dev/docs/using-gazebo-simulator-with-sitl.html
+To solve  gazebo: symbol lookup error:
+sudo apt upgrade libignition-math2

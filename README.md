@@ -38,7 +38,7 @@ check
  wget https://packages.osrfoundation.org/gazebo.key -O - | sudo apt-key add -
  instead 11
  sudo apt-get install gazebo9
-# For developers that work on top of Gazebo, one extra package
+ For developers that work on top of Gazebo, one extra package
 sudo apt-get install libgazebo9-dev
 go to ardupilot file 
 ardupilot_gazebo from khancyr github

@@ -56,3 +56,6 @@ export GAZEBO_MODEL_PATH=~/ardupilot_ws/ardupilot_gazebo/models:${GAZEBO_MODEL_P
 export GAZEBO_MODEL_PATH=~/ardupilot_ws/ardupilot_gazebo/models_gazebo:${GAZEBO_MODEL_PATH}
 
 export GAZEBO_RESOURCE_PATH=~/ardupilot_ws/ardupilot_gazebo/world:${GAZEBO_RESOURCE_PATH}
+## Not take off issue 
+ros::Publisher local_pos_pub = nh.advertise<geometry_msgs::PoseStamped>
+            ("mavros/setpoint_position/local", 10);
